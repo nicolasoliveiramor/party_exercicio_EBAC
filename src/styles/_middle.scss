@@ -1,7 +1,6 @@
 .middle {
     background: linear-gradient(to bottom, rgb(37, 13, 90), rgb(17, 7, 50));
 
-
     &__container {
         height: 100vh;
         display: flex;
@@ -34,13 +33,42 @@
             }
         }
 
-        @media (max-width: 1036px) {
+        @media (max-width: 440px) {
             height: 60vh;
-            margin-bottom: 8px;
+    
+            &__image {
+                height: 450px;
+                width: 300px;
+            }
+
+            &__text {
+                padding-bottom: 32px;
+            }
+        }
+
+        @media ((min-width: 660px) and (max-width: 780px)) {
+            height: 70vh;
 
             &__image {
                 height: 450px;
                 width: 300px;
+            }
+
+            &__text {
+                padding-bottom: 32px;
+            }
+        }
+
+        @media ((min-width: 800px) and (max-width: 1036px)) {
+            height: 80vh;
+
+            &__image {
+                height: 450px;
+                width: 300px;
+            }
+
+            &__text {
+                padding-bottom: 32px;
             }
         }
     }
