@@ -1,0 +1,75 @@
+.hero {
+    // Config imagem de fundo
+    background-image: linear-gradient(rgba(0,0,0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/foto_festa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    // Config sombreamento inferior
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    
+    &__container {
+        height: 100vh;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        
+        &__convite {
+            font-size: 4em;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            background: linear-gradient(to top left, #fff, rgba(300,170,0, 0.9) ) text;
+        }
+
+        &__text {
+            margin-top: 1.5em;
+            font-size: 2em;
+            font-weight: bold;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            background: linear-gradient(to bottom right, #fff, rgba(300,170,0, 0.9) ) text;
+        }
+
+        @media (max-width: 640px) {
+            &__convite {
+                padding: 0 8px;
+                font-size: 2.5em;
+                text-align: center;
+            }
+
+            &__text {
+                font-size: 1.5em;
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+
+        @media (max-width: 768px) {
+            &__convite {
+                font-size: 3em;
+                text-align: center;
+            }
+
+            &__text {
+                font-size: 2em;
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            &__convite {
+                font-size: 3em;
+                text-align: center;
+            }
+
+            &__text {
+                font-size: 2em;
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+    }
+}
